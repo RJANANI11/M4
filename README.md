@@ -10,8 +10,14 @@ To write a C Program to perform the basic left shift operation for 44 integer nu
 5.	Stop the program.
 
 ## PROGRAM
+![Screenshot 2025-05-14 211022](https://github.com/user-attachments/assets/bf076c49-1fbd-47f7-ae06-477a8e8ac36e)
+
+
 
 ## OUTPUT
+![Screenshot 2025-05-14 211031](https://github.com/user-attachments/assets/82fe23d6-16b7-4110-9b01-e655069948fd)
+
+
 
 
 
@@ -47,9 +53,29 @@ Write a C Program to check whether the two numbers are equal or not using simple
 5.	Stop the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+int main()
+{
+int m,n;
+scanf("%d",&m);
+scanf("%d",&n);
+if(m==n)
+{
+printf("Numbers are Equal");
+}
+else
+{
+printf("Numbers are not Equal");
+}
+return 0;
+```
 
 
 ## OUTPUT
+![Screenshot 2025-05-14 211324](https://github.com/user-attachments/assets/ae6c3e55-1e6a-4630-b1d1-1ec0bc9aef86)
+
+
            
 ## RESULT
 
@@ -70,8 +96,12 @@ Write a C Program to convert the given string into lowercase.
 5.	Stop the program.
 
 ## PROGRAM
+![Screenshot 2025-05-14 211419](https://github.com/user-attachments/assets/7cf11ebd-db39-404e-829d-b9b1eb87ff85)
+
 
 ## OUTPUT
+![Screenshot 2025-05-14 211427](https://github.com/user-attachments/assets/3b49642b-6479-4b89-9d8f-0d5fa89bfb19)
+
 
 
 
@@ -95,8 +125,12 @@ Write a C Program to count the total number of words in a given string using do 
 6.	Stop the program.
 
 ## PROGRAM
+![Screenshot 2025-05-14 211508](https://github.com/user-attachments/assets/41e5120b-8b45-4a86-964c-b441a812747d)
+
 
 ## OUTPUT
+![Screenshot 2025-05-14 211515](https://github.com/user-attachments/assets/fded8ea8-ce2a-4861-90aa-7da826f2607d)
+
 
 
 
@@ -129,9 +163,42 @@ Step 7: After the loop, check the value of flag:
 Step 8: End the program.
 
 ## PROGRAM
+```
+#include <stdio.h>
+#include <string.h>
+int main()
+{
+char str1[100], str2[100];
+int i;
+i = 0;
+scanf("%[^\n]%*c", str1);
+scanf("%[^\n]%*c", str2);
+do
+{
+if(str1[i]<str2[i])
+{
+printf("str1 is Less than str2");
+break;
+}
+else if(str1[i]>str2[i])
+{
+printf("str2 is Less than str1");
+break;
+}
+else
+{
+printf("str1 is Equal to str2");
+}
+}while(1);
+i++;
+return 0;
+}
+```
 
 
 ## OUTPUT
+![Screenshot 2025-05-14 211713](https://github.com/user-attachments/assets/e1e1ffe7-1d82-4024-959d-c078e7223890)
+
  
 
 ## RESULT
